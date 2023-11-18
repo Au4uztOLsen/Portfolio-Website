@@ -1,0 +1,21 @@
+.visual-viewport{
+    overflow: hidden;
+    position: relative;
+}
+.visual-viewport .main-photo{
+    width: 100%;
+}
+.visual-viewport .mask{
+    position: absolute;
+    top: 0;
+    width: 25%;
+    height: 100%;
+}
+.visual-viewport .mask.left{
+    left: 0;
+    background: linear-gradient(to right,rgb(0, 0, 0),transparent)
+}
+.visual-viewport .mask.right{
+    right: 0;
+    background: linear-gradient(to left,rgb(0, 0, 0),transparent)
+}

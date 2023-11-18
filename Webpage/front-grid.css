@@ -1,0 +1,81 @@
+.col-1-3{
+    display: table-cell;
+    width: 33.33%;
+    vertical-align: middle;
+}
+.photo-item{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.photo-frame{
+    padding: 5px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgb(0,0,0,0.16),0 3px 6px rgb(0,0,0,0.23)
+}
+.photo-frame-content{
+    position: relative;
+}
+.photo-frame-content > img{
+    width: 100%;
+    display: block;
+}
+.photo-frame-content > .info{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+.photo-frame-content:hover > .info{
+    display: block;
+}
+.photo-frame-content > .info > .photo-name{
+    color: white;
+    font-family: "Noto Sans Thai Looped", sans-serif;
+    font-size: 1.1em;
+    padding: 5px;
+}
+.quote{
+    background-image: linear-gradient(to left,#dadada,#ffffff);
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 3px 6px rgb(0,0,0,0.16),0 3px 6px rgb(0,0,0,0.23)
+}
+.quote-item{
+    padding: 5px;
+}
+.price{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right,#ffb980, #ffce63);
+}
+.quote-item-3{
+    background-image: linear-gradient(to right,#dadada,#ffffff );
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 3px 6px rgb(0,0,0,0.16),0 3px 6px rgb(0,0,0,0.23)
+}
+.addition{
+    font-size: 0.75em;
+}
+.btn{
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px #000000;
+}
+.product-c-1{
+    color: white;
+}
+.product-c{
+    color: #ff9318;
+}
