@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+section{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #f9d423 , #ff4e50);
+}
+.cer-img{
+    width: 90%;
+    margin: auto;
+    padding-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px; 
+}
+.pic{
+    position: relative;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px black;
+    cursor: pointer;
+}
+
+.pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.pic::before{
+    content:"Certificates";
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #000;
+    font-size: 22px;
+    font-weight: 700;
+    width: 100%;
+    margin-top: -100px;
+    opacity: 0;
+    transition: .3s;
+    transition-delay: .2s;
+}
+.pic:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    height: 0;
+    background-color: rgba(0,0,0,.4);
+    transition: .3s;
+}
+.pic:hover::after{
+    height: 100%;
+}
+.pic:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}

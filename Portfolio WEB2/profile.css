@@ -1,0 +1,33 @@
+.about{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #f9d423 , #ff4e50);
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+section{
+    padding: 0 10%;
+}
+
+.about-text h1{
+    color: #fff;
+}
+
+.about-img img{
+    height: 450px;
+    border-radius: 50px;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about-img:hover{
+    transition: all 0.5s ease;
+    transform: scale(1.2);
+}
+.skills-icon{
+    height: 150px;
+}
